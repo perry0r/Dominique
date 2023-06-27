@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 600px;
+    width: 600px;
+
+    background-color: rgb(204, 0, 194);
+    border: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
+}
+.card > .question p {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.btn-yes, .btn-no {
+    height: 48px;
+    width: 100px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.btn-yes {
+    background-color: rgb(255, 0, 0);
+    color: #000000;
+}
+.btn-no {
+    background-color: rgb(170, 255, 0);
+    color: #000000;
+}
+.answer {
+    display: none;
+}
+.answer > p {
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(195, 0, 255);
+    text-shadow: 1px 1px black;
+}
